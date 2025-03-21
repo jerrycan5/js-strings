@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p>Contest</p>
+    
+    <input type="text 1" name="fname" id="fname" placeholder="Type first name">
+    <input type="text 2" name="lname" id="lname" placeholder="Type last name">
+    
+    <button onclick="displayOutput()">Submit</button>
+    
+    <p>Full name: <span id="result"></span></p>
+
+    <script>
+        function displayOutput() {
+            let text1 = document.getElementById("fname").value;
+            let text2 = document.getElementById("lname").value;
+            
+            document.getElementById("result").innerText = text1 + " " + text2;
+        }
+    </script>
+
+</body>
+</html>
+   
